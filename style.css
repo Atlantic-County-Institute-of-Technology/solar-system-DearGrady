@@ -1,12 +1,14 @@
 body.space {
-	
-	overflow: hidden; /* anything that exceeds the bounds of the screen will be hidden */
+
+	overflow: hidden;
+	/* anything that exceeds the bounds of the screen will be hidden */
 	background: url('images/bg.jpg');
 	background-size: cover;
 	margin: 0;
 	height: 100vh;
 	display: flex;
-	align-items: center; /* centers all children along a single axis */
+	align-items: center;
+	/* centers all children along a single axis */
 	justify-content: center;
 }
 
@@ -14,7 +16,8 @@ body.space {
 	position: relative;
 	width: 800px;
 	height: 800px;
-	display: flex; /* centers the main content pane itself */
+	display: flex;
+	/* centers the main content pane itself */
 	justify-content: center;
 	align-items: center;
 }
@@ -23,4 +26,35 @@ body.space {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	animation: orbit 10s infinite ease-in-out;
+}
+
+.stars {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+/* keyframe start */
+@keyframes orbit {
+	0% {
+		transform: translateX(0px);
+	}
+
+	25% {
+		transform: translateX(450px) translateY(0px);
+	}
+
+	50% {
+		transform: translateX(450px) translateY(450px);
+	}
+
+	75% {
+
+		transform: translateX(0px) translateY(450px);
+	}
+
+	100% {
+		transform: translateX(0px) translateY(0px);
+	}
 }
