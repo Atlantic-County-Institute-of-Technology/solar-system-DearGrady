@@ -36,14 +36,22 @@ body.space {
 
 .planetsmercury {
 	position: absolute;
-	top: 50%;
+	top: 50%; 
 	left: 50%;
-	animation: orbitme 2s infinite ease-in-out;
+	animation: orbitme 2s infinite linear;
 
 }
 
 /* keyframe start */
 @keyframes orbitme {
+	0% {transform: rotate(0deg) translatex(-10px) translatey(-250px) rotate(0deg)}
+	50% {transform: rotate(180deg) translatex(-200px) translatey(-250px) rotate(180deg)}
+	100% {transform: rotate(360deg) translatex(-10px) translatey(-250px) rotate(360deg)}
+	}
+
+
+/* keyframe start */
+@keyframes orbitm {
 	0% {
 		transform: translateX(0px);
 	}
