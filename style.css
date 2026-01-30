@@ -34,42 +34,59 @@ body.space {
 	left: 50%;
 }
 
-.planetsmercury {
+#sun {
+	position: absolute;
+	height:150px;
+	width:150px;
+	margin: auto;
+	top: 44%;
+	left: 44%;
+}
+
+
+
+
+#mercury {
 	position: absolute;
 	top: 50%; 
 	left: 50%;
 	animation: orbitme 2s infinite linear;
+}
 
+#venus {
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	animation: orbitv 2s infinite linear;
+}
+
+#earth {
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	animation: orbite 2s infinite linear;
 }
 
 /* keyframe start */
 @keyframes orbitme {
-	0% {transform: rotate(0deg) translatex(-10px) translatey(-250px) rotate(0deg)}
-	50% {transform: rotate(180deg) translatex(-200px) translatey(-250px) rotate(180deg)}
-	100% {transform: rotate(360deg) translatex(-10px) translatey(-250px) rotate(360deg)}
+	0% {transform: rotate(0deg) translatex(100px) translatey(100px) rotate(0deg)}
+	50% {transform: rotate(180deg) translatex(100px) translatey(100px) rotate(180deg)}
+	100% {transform: rotate(360deg) translatex(100px) translatey(100px) rotate(360deg)}
 	}
-
 
 /* keyframe start */
-@keyframes orbitm {
-	0% {
-		transform: translateX(0px);
+@keyframes orbitv {
+	0% {transform: rotate(0deg) translatex(150px) translatey(150px) rotate(0deg)}
+	50% {transform: rotate(180deg) translatex(150px) translatey(150px) rotate(180deg)}
+	100% {transform: rotate(360deg) translatex(150px) translatey(150px) rotate(360deg)}
 	}
 
-	25% {
-		transform: translateX(450px) translateY(0px);
+/* keyframe start */
+@keyframes orbite {
+	0% {transform: rotate(0deg) translatex(215px) translatey(215px) rotate(0deg)}
+	50% {transform: rotate(180deg) translatex(215px) translatey(215px) rotate(180deg)}
+	100% {transform: rotate(360deg) translatex(215px) translatey(215px) rotate(360deg)}
 	}
 
-	50% {
-		transform: translateX(450px) translateY(450px);
-	}
 
-	75% {
 
-		transform: translateX(0px) translateY(450px);
-	}
-
-	100% {
-		transform: translateX(0px) translateY(0px);
-	}
-}
