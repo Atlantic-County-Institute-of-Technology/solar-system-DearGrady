@@ -67,6 +67,40 @@ body.space {
 	animation: orbite 2s infinite linear;
 }
 
+#mars {
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	animation: orbitma 2s infinite linear;
+}
+
+#jupiter {
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	animation: orbitj 2s infinite linear;
+}
+
+#saturn {
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	animation: orbits 2s infinite linear;
+}
+
+#uranus {
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	animation: orbitu 2s infinite linear;
+}
+#neptune {
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	animation: orbitu 2s infinite linear;
+}
+
 /* keyframe start */
 @keyframes orbitme {
 	0% {transform: rotate(0deg) translatex(100px) translatey(100px) rotate(0deg)}
@@ -88,5 +122,38 @@ body.space {
 	100% {transform: rotate(360deg) translatex(215px) translatey(215px) rotate(360deg)}
 	}
 
+/* keyframe start */
+@keyframes orbitma {
+	0% {transform: rotate(0deg) translatex(280px) translatey(280px) rotate(0deg)}
+	50% {transform: rotate(180deg) translatex(280px) translatey(280px) rotate(180deg)}
+	100% {transform: rotate(360deg) translatex(280px) translatey(280px) rotate(360deg)}
+	}
 
+/* keyframe start */
+@keyframes orbitj {
+	0% {transform: rotate(0deg) translatex(345px) translatey(345px) rotate(0deg)}
+	50% {transform: rotate(180deg) translatex(345px) translatey(345px) rotate(180deg)}
+	100% {transform: rotate(360deg) translatex(345px) translatey(345px) rotate(360deg)}
+	}
+
+/* keyframe start */
+@keyframes orbits {
+	0% {transform: rotate(0deg) translatex(405px) translatey(405px) rotate(0deg)}
+	50% {transform: rotate(180deg) translatex(405px) translatey(405px) rotate(180deg)}
+	100% {transform: rotate(360deg) translatex(405px) translatey(405px) rotate(360deg)}
+	}
+
+/* keyframe start */
+@keyframes orbitu {
+	0% {transform: rotate(0deg) translatex(455px) translatey(455px) rotate(0deg)}
+	50% {transform: rotate(180deg) translatex(455px) translatey(455px) rotate(180deg)}
+	100% {transform: rotate(360deg) translatex(455px) translatey(455px) rotate(360deg)}
+	}
+
+/* keyframe start */
+@keyframes orbitn {
+	0% {transform: rotate(0deg) translatex(485px) translatey(485px) rotate(0deg)}
+	50% {transform: rotate(180deg) translatex(485px) translatey(485px) rotate(180deg)}
+	100% {transform: rotate(360deg) translatex(485px) translatey(485px) rotate(360deg)}
+	}
 
